@@ -1,0 +1,47 @@
+#
+# generated on 2016/10/18 10:35:35
+#
+# --table-start--
+dataClass=POJO.Combination
+tableName=Combination
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=fecha
+canBeNull=false
+indexName=Combination_fecha_idx
+# --field-end--
+# --field-start--
+fieldName=N1
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=N2
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=N3
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=N4
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=N5
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=Est1
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=Est2
+canBeNull=false
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
