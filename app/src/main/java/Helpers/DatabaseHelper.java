@@ -31,7 +31,7 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
     private Dao<Combination,Integer> combinationDAO = null;
     private RuntimeExceptionDao<Combination,Integer> combinationRuntimeDAO = null;
 
-    public DatabaseHelper(Context context, String databaseName, SQLiteDatabase.CursorFactory factory, int databaseVersion) {
+    public DatabaseHelper(Context context) {
         //TODO: Al finalizar el helper crear un fichero de configuración ORMLite
         super(context, DATABASE_NAME, null, DATABASE_VERSION, R.raw.ormlite_config);
     }
