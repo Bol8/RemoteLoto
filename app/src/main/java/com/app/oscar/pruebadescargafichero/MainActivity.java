@@ -189,97 +189,6 @@ public class MainActivity extends OrmLiteBaseActivity<DatabaseHelper> {
             }
         }.execute();
 
-      // mAsyncTask.cancel(true);
-
-        /*new AsyncTask(){
-
-            @Override
-            protected Object doInBackground(Object[] params) {
-
-
-                // TODO Auto-generated method stub
-                Looper.prepare();
-
-                //  ArrayList<String> urls = new ArrayList<String>();
-                URL url = null;
-
-                try {
-                    url = new URL("https://docs.google.com/spreadsheet/pub?key=0AhqMeY8ZOrNKdEFUQ3VaTHVpU29UZ3l4emFQaVZub3c&output=csv");
-                    //  url = new URL("http://www.football-data.co.uk/mmz4281/1617/SP1.csv");
-
-                    HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-                    // conn.setConnectTimeout(60000);
-
-                    BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
-
-                    String str;
-                    while ((str = in.readLine()) != null) {
-                        datas.add(str);
-                        // mEditText.setText(str);
-                        //Log.d("MainActivity", str);
-                    }
-
-                    in.close();
-
-                  //  msg.arg1 = 1;
-                  //  handler.sendMessage(msg);
-
-
-
-                    // DefaultHttpClient  httpclient = new DefaultHttpClient();
-                } catch (MalformedURLException e) {
-                    e.printStackTrace();
-                } catch (Exception ex) {
-                    ex.printStackTrace();
-                }
-
-
-
-                Toast.makeText(MainActivity.this, "Descarga completa", Toast.LENGTH_LONG).show();
-                Looper.loop();
-                return null;
-            }
-        }.execute();*/
-
-       /* new Thread(new Runnable() {
-            @Override
-            public void run() {
-                //  ArrayList<String> urls = new ArrayList<String>();
-                URL url = null;
-
-                try {
-                    url = new URL("https://docs.google.com/spreadsheet/pub?key=0AhqMeY8ZOrNKdEFUQ3VaTHVpU29UZ3l4emFQaVZub3c&output=csv");
-                    //  url = new URL("http://www.football-data.co.uk/mmz4281/1617/SP1.csv");
-
-                    HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-                    // conn.setConnectTimeout(60000);
-
-                    BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
-
-                    String str;
-                    while ((str = in.readLine()) != null) {
-                        datas.add(str);
-                        // mEditText.setText(str);
-                        //Log.d("MainActivity", str);
-                    }
-
-                    in.close();
-
-                    msg.arg1 = 1;
-                    handler.sendMessage(msg);
-
-
-
-                    // DefaultHttpClient  httpclient = new DefaultHttpClient();
-                } catch (MalformedURLException e) {
-                    e.printStackTrace();
-                } catch (Exception ex) {
-                    ex.printStackTrace();
-                }
-
-            }
-        }).start();*/
-
     }
 
 
@@ -305,16 +214,6 @@ public class MainActivity extends OrmLiteBaseActivity<DatabaseHelper> {
 
             listCombinations.add(comb);
         }
-
-       /* for (String valor : datas) {
-
-
-
-            Combination comb = new Combination(new Date(),1,2,3,4,5,1,2);
-
-           listCombinations.add(comb);
-
-        }*/
 
         return listCombinations;
     }
